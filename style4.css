@@ -1,0 +1,29 @@
+/* overflow: hidden; */
+    /* overflow: scroll; */
+    /* overflow: auto; */
+
+    /* ANOTHER SOLUTION FOR INCRESSING AUTOMATIC SIZE OF THE CONTAINER ACORDING TO INCRESSING THE TEXT 
+    SET LOWER LIMIT FOR HEIGHT -> min- height*/
+/* div{
+    max-width: 700px;
+    min-height: 200px;
+    background-color: hotpink;
+    
+
+} */
+
+#section-1{
+    /* position: absolute; change on screen view*/
+    /* position: relative;  change on correct position*/
+    /* fixed:follow the screen */
+    /* position: fixed ; FIXTED ON THE VIEW PORT */
+
+    /* position: sticky;  STICKY ON THE PERTICULAR CONDITION AS GIVEN LIKE TOP,BOTTOM , ETC */
+    /* STATIC: DEFAULT CONDITION */
+    position: static;
+    left: 100px;
+    top: 0;
+    width: 500px;
+    height: 300px;
+    background-color: lawngreen;
+}

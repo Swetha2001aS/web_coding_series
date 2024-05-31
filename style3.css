@@ -1,0 +1,27 @@
+/* div{
+    background-color: aqua;
+    margin-bottom: 15px;
+} */
+span{
+    background-color: brown;
+}
+
+/* div{
+    display: inline;
+} */
+
+/* adjusting dimention text automaticatliy  */
+/* div{
+    
+    display: inline-block;
+} */
+
+div{
+    width: 300px;
+    height: 500px;
+    background-color: goldenrod;
+    display: inline-block;
+}
+#block-2{
+    background-color: teal;
+}

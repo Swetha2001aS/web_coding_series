@@ -1,0 +1,16 @@
+/* FONTS*/
+h1{
+    font-size: 40px;
+    font-weight: 900;
+    font-family: Verdana;
+    text-decoration: line-through;
+    color: blueviolet;
+}
+p{
+    font-size: 18px;
+    font-weight: 900;
+    font-family: Verdana;
+    font-style: normal;
+    line-height: 27px; /*height = 2*font-size*/
+    
+}
