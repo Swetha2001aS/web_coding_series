@@ -1,0 +1,41 @@
+:root{
+    --bg-color:rgb(13, 12, 53);
+    --font-family:"Tahoma";
+
+}
+.header-1{
+    --bg-color:rgb(0, 0, 0); /*only use as this function*/
+    color: chartreuse;
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    word-break: break-all;  /* if there is contiously lines it causes overflow ,so we can use break all*/
+
+}
+.header-2{
+    color: rgb(0, 140, 255);
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+
+
+}
+.header-3{
+    color: rgb(153, 0, 255);
+    background-color: var(--bg-color);
+    font-family: var(--font-family);
+
+
+}
+.header-4{
+    color: rgb(255, 0, 255);
+    background-color: var(--bg-color);
+    font-family: var(--font-family);
+
+
+}
+.header-5{
+    color: rgb(251, 255, 0);
+    background-color: var(--bg-color);
+    font-family: var(--font-family);
+
+
+}
