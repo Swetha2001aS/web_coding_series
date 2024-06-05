@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+}
+h1{
+    margin: 0;
+}
+.container{
+    background-color: aquamarine;
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse; */
+    flex-direction: row;
+    /* justify-content: center; */
+    /* justify-content: flex-end; */
+    /* justify-content: flex-start; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    height: 400px;
+    /* align-items: center; */
+    /* align-items: flex-end; */
+    /* align-items: flex-start; */
+    flex-wrap: wrap;
+}
+/* align-items: center; is not permitted to center , in the case of column flex, so used justify content:center */
+/* flex wrap is used for responsive the element - allows elements to fit the container by creating new lines. */
+/* sub property - flex:1 */
+.one,.two,.three{
+    /* flex: 1; */
+    width: 300px;
+    height: 100px;
+    background-color: orange;
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+    /* float: left; */
+}
+ /* Why use float */
+ /* .three{
+    float: right;
+ }
+ footer{
+    background-color: red;
+    clear: both;
+ } */
+ /*  "clear: both" is used for specifically styling the footer 
+   to ensure it appears at the bottom. It's recommended to use it 
+   after floating elements. */
+
+ /* .two{
+    flex:2;
+ } */
+ /* .three{
+    flex: 1;
+ } */
+
+ /* order is used for ordering the elemnt , especally its used for mobile responsive */
+/* .one{
+    order: 3;
+}
+.two{
+    order: 2;
+}
+.three{
+    order: 1;
+} */

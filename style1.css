@@ -1,0 +1,31 @@
+/* multiple selectors*/
+h1,h2,h3{
+    color: red;
+}
+#para_1{
+    color: blueviolet;
+}
+.common{
+    background-color: lightblue;
+    color: black;
+    padding: 15px;
+}
+/* nested selectors*/
+
+#section1 h1{
+    color: brown;
+}
+#section1 p{
+    color:hotpink;
+}
+#section2 p{
+    color:lawngreen;
+}
+
+
+div a{
+    color: gray;
+}
+ul li a{
+    color: orange;
+}

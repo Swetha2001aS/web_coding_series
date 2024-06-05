@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center; /*horizontal center*/
+    align-items: center; /*vertical center*/
+    height: 100vh; /*full height of the view potort*/
+}
+
+
+h1{
+    color: blue;
+}
+
+/* priority based on its specificity */
+div h1{
+    color: orange;
+}
+
+/* 2nd priority - class */
+.header{
+    color: green;
+}
+
+div .header{
+     color:purple;
+}
+
+/* first priority - id , but limite*/
+div #header{
+    color: teal;   
+}
+
+
+/* another solution for specifying element importent (not recommented)*/
+#header{
+    color: dimgray !important;
+}
+
+div #header{
+    color: dimgray !important;
+}
+
+
