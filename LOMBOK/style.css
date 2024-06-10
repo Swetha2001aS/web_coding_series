@@ -1,0 +1,373 @@
+*{
+    box-sizing: border-box;
+    /* outline: 1px solid; */
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Reem Kufi Fun;
+}
+
+/* header */
+
+header{
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+
+
+    z-index: 1000;
+    
+}
+
+header .header-container{
+    
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 98%; 
+    
+}
+
+
+
+header a{
+     
+    text-decoration: none;
+    /* margin-right: 10px; */
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-family: 'Reem Kufi Fun';
+    color: rgba(47, 46, 46, 0.91);
+}
+
+header span{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-colors); 
+    padding: 10px 20px; 
+    display: inline-block; 
+    margin-right: 10px;
+    position: relative;
+    border: 2px solid transparent; 
+    transition: border-color 0.3s; 
+}
+
+nav a:focus {
+    outline: none;
+    border-color: black;
+}
+
+nav a:hover {
+    border-color: black; 
+}
+
+/* Mobile Menu Styles */
+button.dropdown-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+nav.dropdown-content {
+    display: flex;
+}
+
+
+/* main section */
+.main-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/crop_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.heading-text {
+    text-align: center;
+}
+
+.heading-text h1 {
+    margin: 0;
+    font-size: 100px;
+    color: var(--primary-colors);
+    letter-spacing: 2px;
+    
+}
+
+.heading-text h4 {
+    margin: 0;
+    font-size: 24px;
+    color: var(--primary-colors); 
+
+}
+
+
+/* section-2 */
+
+.section-two{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(216, 216, 216);
+
+
+}
+
+.section-two h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+    padding-bottom: 20px;
+    color: var(--primary-colors);
+}
+
+.card-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+}
+
+
+
+.card-container{
+    color: var(--primary-colors);
+    width: 300px;
+    height: 400px;
+    box-shadow: 10px 5px 26px rgb(175, 175, 175);
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: white;
+}
+
+
+.image-container{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+
+}
+
+.image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-container h1 {
+    font-size: 18px;
+    margin: 50px 10px;
+}
+
+/* section-2 end */
+
+/* section-3 starting */
+
+.section-three{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.left-container{
+    flex: 0 0 45%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+.left-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.right-container{
+    flex: 1;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.right-container h1{
+    padding-bottom: 30px;
+    color: var(--primary-colors);
+    text-align: center;
+
+}
+
+.right-container p{
+    color: var(--primary-colors);
+    text-align:justify;
+    line-height: 40px;
+    font-size: 16px;
+}
+/* section-4 */
+
+.section-four{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(214, 214, 214);
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+.heading-container h1{
+    margin: 20px;
+    letter-spacing: 2px;
+}
+
+.header-container h2{
+    margin: 10px;
+    font-size: 12px;
+}
+
+
+.header-container h2{
+    padding-top: 10px;
+    text-align: justify;
+    width: 100%;
+}
+
+.form-container{
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.form-container input {
+    border: 0.2px solid white;
+    height: 60px;
+    width: 500px;
+    margin-top: 2px;
+    margin-left: -10px;
+    padding: 20px;
+    background-color: rgb(228, 227, 227);
+    color: var(--primary-colors);
+    caret-color: rgb(54, 54, 54);
+    
+}
+
+.form-container label {
+    color: rgb(165, 165,165);
+    font-size: var(--font-size-14);
+    position: absolute;
+    top: 10px;
+    padding: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.submit-section .submit-button {
+    padding: 10px 20px;
+    background-color: rgb(214, 214, 214);
+    color:black;
+    letter-spacing: 1px;
+    border: 0.3px solid black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-section .submit-button:hover {
+    background-color: rgb(214, 214, 214);
+}
+
+.footer-container{
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+/* nav bar responsive */
+
+@media(max-width:768px){
+
+    .heading-text h1{
+        font-size: 60px;
+    }
+    .heading-text h4{
+        font-size: 14px;
+    }
+
+
+}
+
+
+
+
+
+@media (max-width: 480px) {
+    header .header-container {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    header a span {
+        display: none;
+    }
+
+    button.dropdown-toggle {
+        display: block;
+    }
+
+    nav.dropdown-content {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+        background-color: rgba(217, 217, 218, 0.733);
+    }
+
+    button.dropdown-toggle:focus + nav.dropdown-content,
+    button.dropdown-toggle:focus-within + nav.dropdown-content,
+    nav.dropdown-content:hover {
+        display: flex;
+    }
+
+    nav.dropdown-content a {
+        margin: 5px 0;
+        padding: 10px 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .heading-text h1{
+        font-size: 40px;
+    }
+    .heading-text h4{
+        font-size: 16px;
+    }
+}

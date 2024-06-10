@@ -42,3 +42,66 @@ div #header{
 }
 
 
+h2[class *= "-"]{
+    color: chartreuse;
+}
+
+h2[class$="12"]{
+    color: cadetblue;
+}
+
+h2[class ^= "sec"]{
+    color: gray;
+}
+
+.container{
+    outline:  1px solid black;
+}
+
+/* child selecter
+div > h3{
+    color: purple;
+} */
+
+
+/* general sibiling selection */
+
+/* #container-id ~ .container h3{
+    color: brown;
+} */
+
+/* adjacent silbling selection */
+/* #container-id + .container h3{
+    color: rgb(22, 11, 116);
+} */
+
+
+/* div:not(.grid-container,.conatiner-one){
+    color: coral;
+} */
+
+/* .inside-1 span,
+ .inside-2 span,
+  .inside-3 span{
+    color: darkred;
+} */
+
+
+/* 
+:is(
+    .inside-1,
+    .inside-2 ,
+     .inside-3 )span{
+        color: darkslategray;
+     }
+
+:where(
+    .inside-1,
+    .inside-2 ,
+     .inside-3 )span{
+        color: rgb(77, 47, 79);
+     } */
+
+
+
+
