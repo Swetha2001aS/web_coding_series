@@ -14,7 +14,7 @@ body{
 
 header{
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     position: absolute;
     top: 0;
     
@@ -24,7 +24,7 @@ header .header-container{
     
     display: flex;
     justify-content: space-between;
-    width: 1180px;
+    width: 100%;
     margin: auto;
     
 }
@@ -210,9 +210,10 @@ nav.dropdown-content {
 }
 
 .right-container h1{
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
     color: var(--primary-colors);
     text-align: center;
+    line-height: 70px;
 
 }
 
@@ -258,19 +259,21 @@ nav.dropdown-content {
     display: flex;
     flex-direction: column;
     position: relative;
+    width: 50%;
 
 }
 
 .form-container input {
     border: 0.2px solid white;
     height: 60px;
-    width: 500px;
+    width: 100%;
     margin-top: 2px;
     margin-left: -10px;
     padding: 20px;
     background-color: rgb(228, 227, 227);
     color: var(--primary-colors);
     caret-color: rgb(54, 54, 54);
+    font-size: var(--font-size-14);
     
 }
 
@@ -279,8 +282,21 @@ nav.dropdown-content {
     font-size: var(--font-size-14);
     position: absolute;
     top: 10px;
+    left: 20px;
     padding: 10px;
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.form-container input:focus + label,
+.form-container input:not(:placeholder-shown) + label{
+    top: -35px;
+    left: 10px;
+    font-size: 13px;
+    color: var(--primary-colors);
+}
+.form-container input::placeholder {
+    color: transparent;
 }
 
 .submit-section .submit-button {
@@ -305,7 +321,7 @@ nav.dropdown-content {
     align-items: center;
 
 }
-
+/* tab response */
 /* nav bar responsive */
 
 @media(max-width:768px){
@@ -323,12 +339,13 @@ nav.dropdown-content {
 
 
 
-
+/* mobile responsive */
 @media (max-width: 480px) {
+
     header .header-container {
         flex-direction: column;
-        align-items: flex-end;
-}
+        align-items: flex-end; 
+    }
 
     header a span {
     display: none;
@@ -365,4 +382,65 @@ nav.dropdown-content {
     .heading-text h4{
         font-size: 16px;
     }
+
+    /* section 3 */
+    .section-three{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+
+    }
+    left-container{
+        display: flex;
+        align-items: flex-start;
+        overflow: hidden;
+        height: auto;
+        
+    }
+    .right-container{
+        flex: 1;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .right-container h1{
+
+        color: var(--primary-colors);
+        text-align: center;
+
+
+    }
+
+    /* section -4 mobile responsive */
+    .section-four{
+        height: auto;
+        padding: 20px;
+    }
+
+    .form-container{
+        width: 90%;
+    }
+    /* footer responsive */
+    .footer-container{
+
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 20px;
+
+    }
+
+    .footer-container nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .footer-container nav a{
+        margin: 5px 0;
+    }
+    
+    
 }
