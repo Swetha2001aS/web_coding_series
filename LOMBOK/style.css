@@ -17,9 +17,6 @@ header{
     padding: 20px;
     position: absolute;
     top: 0;
-
-
-    z-index: 1000;
     
 }
 
@@ -27,12 +24,10 @@ header .header-container{
     
     display: flex;
     justify-content: space-between;
+    width: 1180px;
     margin: auto;
-    width: 98%; 
     
 }
-
-
 
 header a{
      
@@ -333,14 +328,14 @@ nav.dropdown-content {
     header .header-container {
         flex-direction: column;
         align-items: flex-end;
-    }
+}
 
     header a span {
-        display: none;
+    display: none;
     }
 
     button.dropdown-toggle {
-        display: block;
+    display: block;
     }
 
     nav.dropdown-content {
